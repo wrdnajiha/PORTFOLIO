@@ -90,15 +90,73 @@ document.addEventListener('mousemove', function(e) {
 
 const projectData = {
   fyp: {
-    title: 'FYP · Final Year Project',
-    subtitle: 'Interactive Media · Unity / AR',
-    description: 'Final year project focusing on interactive storytelling and immersive experience using Augmented Reality. This project explores how AR can enhance user engagement and create meaningful interactive narratives.',
-    tags: ['Unity', 'AR', 'C#', 'Research', 'User Experience'],
+    title: 'K-CustomAR: Interactive AR Korean Food Customization System',
+    subtitle: 'Final Year Project | Mobile AR Application',
+    description: 'Developed an Augmented Reality (AR) mobile application that allows users to visualize and customize Korean food dishes in real-time. Users can select ingredients, adjust portion sizes, customize spice levels, and view dynamic price updates through an interactive AR experience.',
+    
+    // ===== 3 GALLERY IMAGES =====
+    gallery: [
+      'image/ar1.jpg',
+      'image/ar2.jpg',
+      'image/ar3.jpg'
+    ],
+    
+    // ===== GALLERY CAPTIONS =====
+    galleryCaptions: [
+      '📱 AR Food Visualization',
+      '🍱 Customization Interface',
+      '📋 Order Summary'
+    ],
+    
+    // ===== KEY FEATURES =====
+    features: [
+      'Marker-Based AR Food Visualization - Scan menu marker to display 3D Korean food models, Real-time AR food preview',
+      'Food Customization System - Rice portion selection (Small, Medium, Large), Vegetable selection, Protein selection, Topping customization, Sauce/spice level customization',
+      'Dynamic Menu Interaction - Interactive UI panels, Real-time food model updates, Price calculation based on selected ingredients',
+      'Order Summary Module - Display selected ingredients, Display selected drink, Calculate total order price'
+    ],
+    
+    // ===== TECHNOLOGIES USED =====
+    technologies: ['Unity 6', 'Vuforia Engine', 'C#', 'Blender', 'Meshy AI', 'Android Studio', 'GitHub'],
+    
+    // ===== MY RESPONSIBILITIES =====
+    responsibilities: [
+      'Designed application workflow and wireframes',
+      'Developed AR marker detection system',
+      'Integrated 3D food models into Unity',
+      'Implemented food customization logic',
+      'Developed UI navigation and interaction system',
+      'Conducted testing and debugging'
+    ],
+    
+    // ===== SKILLS DEMONSTRATED =====
+    skills: [
+      'Augmented Reality Development',
+      'Unity Development',
+      'C# Programming',
+      'UI/UX Design',
+      '3D Asset Integration',
+      'Mobile Application Development',
+      'Software Testing'
+    ],
+    
+    // ===== PROJECT OUTCOME =====
+    outcome: 'Successfully developed a functional AR food customization prototype that enhances user engagement and decision confidence by allowing customers to visualize and customize Korean food dishes before ordering.',
+    
+    tags: ['Unity', 'AR', 'C#', 'Mobile App', 'Vuforia'],
     details: {
       'Duration': '6 months',
       'Role': 'Lead Developer',
-      'Tools': 'Unity, AR Foundation, C#',
-      'Team': '3 members'
+      'Tools': 'Unity 6, Vuforia, Blender, Android Studio',
+      'Team': 'Individual'
+    },
+    
+    // ===== BUTTONS =====
+    fypLinks: {
+      github: 'https://github.com/your-username/k-customar',
+      report: 'https://drive.google.com/file/d/YOUR_REPORT_ID/view?usp=sharing',
+      demo: 'https://www.youtube.com/watch?v=YOUR_DEMO_VIDEO_ID',
+      apk: 'https://drive.google.com/file/d/YOUR_APK_ID/view?usp=sharing'
     }
   },
   
@@ -234,7 +292,7 @@ motion1: {
     title: 'Interactive Media Project Management',
     subtitle: 'Making Game Using Unity',
     description: 'A game development project using Unity focusing on game mechanics, interface design, and project management workflow. Strengthened skills in interactive media production, teamwork, and structured game development.',
-    video: 'videos/game-project.mp4',
+    videoLink: 'https://drive.google.com/file/d/1fpc8Dd_F50k-U2zkQtcOVUyvdXzCZUUq/view?usp=drive_link',
     tags: ['Unity', 'Game Design', 'C#', 'Teamwork', 'Project Management'],
     details: {
       'Duration': '1 months',
@@ -321,6 +379,24 @@ animation: {
     part1: 'https://drive.google.com/file/d/160psx7y5_6AgiUFagktttGkUwtK0S5_i/view?usp=sharing',
     part2: 'https://drive.google.com/file/d/1OduU18LJ8EYCITgliHkjbJvT43KHgxus/view?usp=sharing'
   },
+  // ===== VIDEO GALLERY (AT THE BOTTOM) =====
+  videoGallery: [
+    {
+      link: 'https://youtu.be/EBBqX1Td-fI',
+      title: 'Bicycle Animation',
+      description: 'Basic 3D modeling and object animation.'
+    },
+    {
+      link: 'https://youtu.be/vPRkxBan_ok',
+      title: 'Facial Rigging',
+      description: 'Character rigging and facial control setup.'
+    },
+    {
+      link: 'https://youtu.be/GNy7Sf8etEI',
+      title: 'Bouncing Ball Animation',
+      description: 'Animation principles and motion path practice.'
+    }
+  ]
 },
 
 audio: {
@@ -359,16 +435,36 @@ audio: {
   videoLink: 'https://youtu.be/QJ8pOyLCwJ4'
 },
   security: {
-    title: 'IT Security',
-    subtitle: 'Network & System Protection',
-    description: 'An IT security project focusing on security assessments, risk analysis, and implementation of basic defensive measures. Learned about network security fundamentals, common vulnerabilities, and how to protect systems against various cyber threats.',
-    tags: ['Security', 'Risk Analysis', 'Network Security', 'Cybersecurity'],
+    title: 'Attendance & Leave Management System (ALMS)',
+    subtitle: 'Secure Web Application | Network & System Security',
+    description: 'Developed a secure Attendance & Leave Management System using a two-tier architecture with separate web and database servers. Implemented multiple security controls including HTTPS, UFW Firewall, bcrypt password hashing, prepared statements, role-based access control, and SFTP Chroot Jail to protect the application from common web security threats.',
+    
+    // ===== KEY FEATURES =====
+    features: [
+      '🔒 Two-VM Architecture (Web Server & Database Server)',
+      '🔒 HTTPS with SSL Certificate',
+      '🔒 bcrypt Password Hashing',
+      '🔒 Prepared Statements (SQL Injection Prevention)',
+      '🔒 XSS Protection (htmlspecialchars())',
+      '🔒 Role-Based Access Control (RBAC)',
+      '🔒 UFW Firewall Configuration',
+      '🔒 SFTP Chroot Jail',
+      '🔒 Attendance & Leave Management Module'
+    ],
+    
+    // ===== TECHNOLOGIES USED =====
+    technologies: ['Ubuntu Server', 'Apache2', 'PHP', 'MySQL', 'VirtualBox', 'UFW Firewall', 'OpenSSL', 'SSH/SFTP'],
+    
+    tags: ['Web Security', 'Network Security', 'Linux', 'PHP', 'MySQL', 'OWASP', 'VirtualBox'],
     details: {
       'Duration': '3 months',
-      'Role': 'Security Analyst',
-      'Tools': 'Wireshark, Nmap, VirtualBox',
-      'Team': 'Individual Project'
-    }
+      'Role': 'Security Analyst & Backend Developer',
+      'Tools': 'Ubuntu Server, Apache2, PHP, MySQL, VirtualBox, UFW Firewall, OpenSSL, SSH/SFTP',
+      'Team': 'Group Project (3 Members)'
+    },
+    
+    // ===== DEMO VIDEO LINK =====
+    videoLink: 'https://www.youtube.com/watch?v=YOUR_DEMO_VIDEO_ID'
   },
   
   vr: {
@@ -440,13 +536,14 @@ function openPopup(projectId) {
   
   const hasImage = data.image && data.image !== '';
   const hasPdf = data.pdfLink && data.pdfLink !== '';
+  const isFyp = projectId === 'fyp';
   const isRetak = projectId === 'workshop2';
   const isImaging = projectId === 'imaging';
   const isAnimation = projectId === 'animation';
   const isAudio = projectId === 'audio';
   const isMotion1 = projectId === 'motion1';  // <-- ADD THIS
   const isMotion2 = projectId === 'motion2';
-  const hasGallery = (isRetak || isImaging || isAnimation || isAudio || isMotion1 || isMotion2) && data.gallery && data.gallery.length > 0;
+  const hasGallery = (isFyp || isRetak || isImaging || isAnimation || isAudio || isMotion1 || isMotion2) && data.gallery && data.gallery.length > 0;
   const hasSoftware = data.software && data.software.length > 0;
   const hasVideo = data.video && data.video !== '';
   const hasExtraLinks = data.extraLinks && (data.extraLinks.part1 || data.extraLinks.part2);
@@ -456,7 +553,153 @@ function openPopup(projectId) {
     <h2>${data.title}</h2>
     <p class="popup-subtitle">${data.subtitle}</p>
   `;
-  
+    // ===== FYP DETAILED SECTION =====
+  if (projectId === 'fyp') {
+    
+    // ===== KEY FEATURES =====
+    if (data.features && data.features.length > 0) {
+      html += `
+        <div class="fyp-section">
+          <h4 class="fyp-title"><i class="fas fa-list-check"></i> Key Features</h4>
+          <div class="fyp-features-grid">
+      `;
+      
+      data.features.forEach(feature => {
+        html += `
+          <div class="fyp-feature-item">
+            <span>${feature}</span>
+          </div>
+        `;
+      });
+      
+      html += `
+          </div>
+        </div>
+      `;
+    }
+    
+    // ===== TECHNOLOGIES USED =====
+    if (data.technologies && data.technologies.length > 0) {
+      html += `
+        <div class="fyp-section">
+          <h4 class="fyp-title"><i class="fas fa-code"></i> Technologies Used</h4>
+          <div class="fyp-tech-tags">
+      `;
+      
+      data.technologies.forEach(tech => {
+        html += `
+          <span class="fyp-tech-tag">${tech}</span>
+        `;
+      });
+      
+      html += `
+          </div>
+        </div>
+      `;
+    }
+    
+    // ===== MY RESPONSIBILITIES =====
+    if (data.responsibilities && data.responsibilities.length > 0) {
+      html += `
+        <div class="fyp-section">
+          <h4 class="fyp-title"><i class="fas fa-user-check"></i> My Responsibilities</h4>
+          <div class="fyp-list">
+      `;
+      
+      data.responsibilities.forEach(item => {
+        html += `
+          <div class="fyp-list-item">
+            <i class="fas fa-chevron-right"></i>
+            <span>${item}</span>
+          </div>
+        `;
+      });
+      
+      html += `
+          </div>
+        </div>
+      `;
+    }
+    
+    // ===== SKILLS DEMONSTRATED =====
+    if (data.skills && data.skills.length > 0) {
+      html += `
+        <div class="fyp-section">
+          <h4 class="fyp-title"><i class="fas fa-star"></i> Skills Demonstrated</h4>
+          <div class="fyp-skills-tags">
+      `;
+      
+      data.skills.forEach(skill => {
+        html += `
+          <span class="fyp-skill-tag">${skill}</span>
+        `;
+      });
+      
+      html += `
+          </div>
+        </div>
+      `;
+    }
+    
+    // ===== PROJECT OUTCOME =====
+    if (data.outcome) {
+      html += `
+        <div class="fyp-section">
+          <h4 class="fyp-title"><i class="fas fa-trophy"></i> Project Outcome</h4>
+          <p class="fyp-outcome">${data.outcome}</p>
+        </div>
+      `;
+    }
+    
+    // ===== FYP BUTTONS =====
+    if (data.fypLinks) {
+      const links = data.fypLinks;
+      
+      html += `
+        <div class="fyp-buttons-section">
+          <h4 class="fyp-title"><i class="fas fa-link"></i> Resources</h4>
+          <div class="fyp-buttons-grid">
+      `;
+      
+      if (links.github) {
+        html += `
+          <a href="${links.github}" target="_blank" class="fyp-btn github-btn">
+            <i class="fab fa-github"></i> GitHub Repository
+          </a>
+        `;
+      }
+      
+      if (links.report) {
+        html += `
+          <a href="${links.report}" target="_blank" class="fyp-btn report-btn">
+            <i class="fas fa-file-pdf"></i> Project Report
+          </a>
+        `;
+      }
+      
+      if (links.demo) {
+        html += `
+          <a href="${links.demo}" target="_blank" class="fyp-btn demo-btn">
+            <i class="fas fa-play-circle"></i> Demo Video
+          </a>
+        `;
+      }
+      
+      if (links.apk) {
+        html += `
+          <a href="${links.apk}" target="_blank" class="fyp-btn apk-btn">
+            <i class="fas fa-download"></i> APK Download
+          </a>
+        `;
+      }
+      
+      html += `
+          </div>
+        </div>
+      `;
+    }
+  }
+
   // ===== VIDEO SECTION =====
   if (hasVideo) {
     html += `
@@ -519,7 +762,7 @@ if (isAudio && data.posterImage) {
 }
 
   // ===== MAIN IMAGE =====
-  if (hasImage && !isRetak && !isImaging && !isAnimation && !isAudio && !isMotion1 && !isMotion2) {
+  if (hasImage && !isFyp && !isRetak && !isImaging && !isAnimation && !isAudio && !isMotion1 && !isMotion2) {
     html += `
       <div class="popup-image">
         <img src="${data.image}" alt="${data.title}" />
@@ -685,6 +928,40 @@ if (isAudio && data.posterImage) {
       </div>
     `;
   }
+
+  // ===== VIDEO GALLERY (for Animation project - at the bottom) =====
+if (isAnimation && data.videoGallery && data.videoGallery.length > 0) {
+  html += `
+    <div class="video-gallery-section">
+      <h4 class="video-gallery-title"><i class="fas fa-video"></i> Animation Exercises</h4>
+      <div class="video-gallery-grid">
+  `;
+  
+  data.videoGallery.forEach((video, index) => {
+    html += `
+      <div class="video-gallery-item">
+        <a href="${video.link}" target="_blank" class="video-gallery-link">
+          <div class="video-gallery-icon"><i class="fas fa-play-circle"></i></div>
+          <div class="video-gallery-info">
+            <span class="video-gallery-name">${index + 1}. ${video.title}</span>
+            <span class="video-gallery-desc">${video.description}</span>
+          </div>
+          <i class="fas fa-arrow-right video-gallery-arrow"></i>
+        </a>
+      </div>
+    `;
+  });
+  
+  html += `
+      </div>
+    </div>
+  `;
+}
+
+// ===== INSERT INTO POPUP =====
+body.innerHTML = html;
+popup.classList.add('active');
+document.body.style.overflow = 'hidden';
   
   // ===== WORKSHOP I PDF =====
   if (hasPdf && !isRetak) {
@@ -794,6 +1071,67 @@ if (isAudio && data.posterImage) {
     }
   }
 
+    // ===== IT SECURITY DETAILED SECTION =====
+  if (projectId === 'security') {
+    
+    // ===== KEY FEATURES =====
+    if (data.features && data.features.length > 0) {
+      html += `
+        <div class="fyp-section">
+          <h4 class="fyp-title"><i class="fas fa-shield-alt"></i> Key Features</h4>
+          <div class="fyp-features-grid">
+      `;
+      
+      data.features.forEach(feature => {
+        html += `
+          <div class="fyp-feature-item">
+            <span>${feature}</span>
+          </div>
+        `;
+      });
+      
+      html += `
+          </div>
+        </div>
+      `;
+    }
+    
+    // ===== TECHNOLOGIES USED =====
+    if (data.technologies && data.technologies.length > 0) {
+      html += `
+        <div class="fyp-section">
+          <h4 class="fyp-title"><i class="fas fa-code"></i> Technologies Used</h4>
+          <div class="fyp-tech-tags">
+      `;
+      
+      data.technologies.forEach(tech => {
+        html += `
+          <span class="fyp-tech-tag">${tech}</span>
+        `;
+      });
+      
+      html += `
+          </div>
+        </div>
+      `;
+    }
+    
+    // ===== SINGLE VIDEO LINK (Demo Video) =====
+    if (data.videoLink) {
+      html += `
+        <div class="single-video-section">
+          <a href="${data.videoLink}" target="_blank" class="single-video-btn">
+            <div class="video-icon"><i class="fas fa-play-circle"></i></div>
+            <div class="video-info">
+              <span class="video-label">Watch Demo Video</span>
+              <span class="video-desc">Timelapse demo of ALMS</span>
+            </div>
+            <i class="fas fa-arrow-right video-arrow"></i>
+          </a>
+        </div>
+      `;
+    }
+  }
 }
 
 // ============================================================
@@ -818,3 +1156,22 @@ document.getElementById('projectPopup').addEventListener('click', function(e) {
 });
 
 console.log('✨ WARDINA NAJIHAH Portfolio loaded!');
+
+
+// ===== CONTACT FORM =====
+function sendMessage(event) {
+  event.preventDefault();
+  
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const subject = document.getElementById('subject').value || 'No subject';
+  const message = document.getElementById('message').value;
+  
+  // Create mailto link
+  const mailtoLink = `mailto:njhhrsmdi@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+  
+  window.location.href = mailtoLink;
+  
+  // Show success message
+  alert('📧 Your message is being sent via email!');
+}
