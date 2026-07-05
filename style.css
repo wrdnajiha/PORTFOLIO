@@ -3952,3 +3952,166 @@ body {
     font-size: 0.85rem;
   }
 }
+
+/* ===== VR SECTION ===== */
+.vr-section {
+  margin-top: 1.2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(184, 138, 212, 0.12);
+}
+
+.vr-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #3a1f4a;
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.vr-title i {
+  color: #b88ad4;
+}
+
+/* SDG */
+.vr-sdg {
+  font-size: 0.9rem;
+  color: #4a2c5e;
+  line-height: 1.7;
+  padding: 0.5rem 1rem;
+  background: rgba(184, 138, 212, 0.05);
+  border-radius: 0.8rem;
+  border-left: 3px solid #b88ad4;
+}
+
+/* Features */
+.vr-features-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.vr-feature-item {
+  font-size: 0.85rem;
+  color: #4a2c5e;
+  padding: 0.2rem 0;
+  line-height: 1.5;
+}
+
+/* Contribution List */
+.vr-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.vr-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #4a2c5e;
+  line-height: 1.5;
+}
+
+.vr-list-item i {
+  color: #b88ad4;
+  font-size: 0.6rem;
+  margin-top: 0.3rem;
+  flex-shrink: 0;
+}
+
+/* Lab Activities */
+.vr-lab-section {
+  margin-top: 1.2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(184, 138, 212, 0.12);
+}
+
+.vr-lab-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.vr-lab-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.8rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(184, 138, 212, 0.08);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.vr-lab-item:hover {
+  transform: translateX(4px);
+  background: white;
+  border-color: #b88ad4;
+  box-shadow: 0 4px 15px rgba(130, 70, 150, 0.06);
+}
+
+.vr-lab-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  background: linear-gradient(145deg, #b88ad4, #d99ac6);
+  color: white;
+}
+
+.vr-lab-info {
+  flex: 1;
+}
+
+.vr-lab-name {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #3a1f4a;
+  display: block;
+}
+
+.vr-lab-desc {
+  font-size: 0.75rem;
+  color: #7a5d8a;
+}
+
+.vr-lab-arrow {
+  font-size: 0.7rem;
+  color: #b88ad4;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+
+.vr-lab-item:hover .vr-lab-arrow {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .vr-lab-item {
+    padding: 0.5rem 0.8rem;
+  }
+  .vr-lab-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 0.7rem;
+  }
+  .vr-lab-name {
+    font-size: 0.78rem;
+  }
+  .vr-lab-desc {
+    font-size: 0.68rem;
+  }
+  .vr-feature-item {
+    font-size: 0.8rem;
+  }
+}
