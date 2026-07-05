@@ -464,21 +464,78 @@ audio: {
     },
     
     // ===== DEMO VIDEO LINK =====
-    videoLink: 'https://www.youtube.com/watch?v=YOUR_DEMO_VIDEO_ID'
+    videoLink: 'https://youtube.com/shorts/sJNBUCZAkqM?si=v1iIJ0rNp0Hm5hCM'
   },
   
-  vr: {
-    title: 'Virtual Reality',
-    subtitle: 'Immersive Environment',
-    description: 'Virtual Reality experience development with interaction, spatial design, and user testing. Built with Unity and XR toolkit to create an immersive environment where users can explore and interact with virtual objects in a 3D space.',
-    tags: ['VR', 'Unity', 'XR Toolkit', 'Spatial Design'],
+    vr: {
+    title: 'Virtual Reality · Malaysian Food Heritage Gallery',
+    subtitle: 'Third-Person 3D Virtual Gallery | Unity · VR',
+    description: 'Developed a third-person 3D virtual gallery in Unity where players explore traditional and modern Malaysian cuisine through interactive environments connected by portals. The project promotes awareness of Malaysian food heritage by allowing players to compare traditional and modern cuisine in an interactive virtual experience.',
+    sdg: 'SDG 11 – Sustainable Cities and Communities',
+
+    gallery: [
+      'image/vr-gallery.png',
+      'image/traditional-house.png',
+      'image/modern-house.png',
+      'image/traditional-food.png',
+      'image/modern-food.png'
+    ],
+
+    galleryCaptions: [
+      'Virtual Gallery',
+      'Traditional House',
+      'Modern House',
+      'Traditional Cuisine',
+      'Modern Cuisine'
+    ],
+    // ===== KEY FEATURES =====
+    features: [
+      'Third-person character controller',
+      'Portal transition system',
+      'Interactive food information panels',
+      'Traditional Malay house environment',
+      'Modern house environment',
+      'Simple objective GUI'
+    ],
+    
+    // ===== MY CONTRIBUTION =====
+    contributions: [
+      'Designed the gallery layout',
+      'Built the environments',
+      'Arranged 3D assets',
+      'Created interactive exhibits'
+    ],
+    
+    tags: ['VR', 'Unity', 'C#', '3D Environment', 'Cultural Heritage'],
     details: {
-      'Duration': '3 months',
-      'Role': 'VR Developer',
-      'Tools': 'Unity, XR Toolkit, C#',
-      'Team': '3 members'
-    }
-  }
+      'Duration': '1 months',
+      'Role': 'VR Developer, Environment Designer',
+      'Tools': 'Unity, C#',
+      'Team': '4 members'
+    },
+    
+    // ===== DEMO VIDEO LINK =====
+    videoLink: 'https://www.youtube.com/watch?v=F_EQRIhuF3Y',
+    
+    // ===== OTHER LAB ACTIVITIES (YouTube Links) =====
+    labActivities: [
+      {
+        title: 'Assignment 1: Third Controller',
+        description: 'Collecting coins, sound effects, and UI integration',
+        link: 'https://youtu.be/3CIyprMfMKU'
+      },
+      {
+        title: 'Lab Test: Voice Command',
+        description: 'Voice-controlled interaction system',
+        link: 'https://youtu.be/Vk5uBUB6EPo'
+      },
+      {
+        title: 'Lab Class: VR Environment',
+        description: 'Virtual reality environment setup and exploration',
+        link: 'https://youtu.be/cOOfsLHuDCc'
+      }
+    ]
+  },
 };
 
 // ============================================================
@@ -543,7 +600,8 @@ function openPopup(projectId) {
   const isAudio = projectId === 'audio';
   const isMotion1 = projectId === 'motion1';  // <-- ADD THIS
   const isMotion2 = projectId === 'motion2';
-  const hasGallery = (isFyp || isRetak || isImaging || isAnimation || isAudio || isMotion1 || isMotion2) && data.gallery && data.gallery.length > 0;
+  const isVR = projectId === 'vr';
+  const hasGallery = (isFyp || isRetak || isImaging || isAnimation || isAudio || isMotion1 || isMotion2 || isVR) && data.gallery && data.gallery.length > 0;
   const hasSoftware = data.software && data.software.length > 0;
   const hasVideo = data.video && data.video !== '';
   const hasExtraLinks = data.extraLinks && (data.extraLinks.part1 || data.extraLinks.part2);
@@ -1058,19 +1116,6 @@ document.body.style.overflow = 'hidden';
     `;
   }
 
-  // ===== INSERT INTO POPUP =====
-  body.innerHTML = html;
-  popup.classList.add('active');
-  document.body.style.overflow = 'hidden';
-  
-  if (hasGallery) {
-    const track = document.querySelector('.gallery-track');
-    if (track) {
-      track.scrollLeft = 0;
-      updateGalleryIndicator();
-    }
-  }
-
     // ===== IT SECURITY DETAILED SECTION =====
   if (projectId === 'security') {
     
@@ -1130,6 +1175,104 @@ document.body.style.overflow = 'hidden';
           </a>
         </div>
       `;
+    }
+  }
+    // ===== VR DETAILED SECTION =====
+  if (projectId === 'vr') {
+    
+    // ===== SDG =====
+    if (data.sdg) {
+      html += `
+        <div class="vr-section">
+          <h4 class="vr-title"><i class="fas fa-globe-asia"></i> SDG</h4>
+          <p class="vr-sdg">${data.sdg}</p>
+        </div>
+      `;
+    }
+    
+    // ===== KEY FEATURES =====
+    if (data.features && data.features.length > 0) {
+      html += `
+        <div class="vr-section">
+          <h4 class="vr-title"><i class="fas fa-list-check"></i> Features</h4>
+          <div class="vr-features-grid">
+      `;
+      
+      data.features.forEach(feature => {
+        html += `
+          <div class="vr-feature-item">
+            <span>${feature}</span>
+          </div>
+        `;
+      });
+      
+      html += `
+          </div>
+        </div>
+      `;
+    }
+    
+    // ===== MY CONTRIBUTION =====
+    if (data.contributions && data.contributions.length > 0) {
+      html += `
+        <div class="vr-section">
+          <h4 class="vr-title"><i class="fas fa-user-check"></i> My Contribution</h4>
+          <div class="vr-list">
+      `;
+      
+      data.contributions.forEach(item => {
+        html += `
+          <div class="vr-list-item">
+            <i class="fas fa-chevron-right"></i>
+            <span>${item}</span>
+          </div>
+        `;
+      });
+      
+      html += `
+          </div>
+        </div>
+      `;
+    }
+    
+    // ===== OTHER LAB ACTIVITIES =====
+    if (data.labActivities && data.labActivities.length > 0) {
+      html += `
+        <div class="vr-lab-section">
+          <h4 class="vr-title"><i class="fas fa-flask"></i> Other Lab Activities</h4>
+          <div class="vr-lab-grid">
+      `;
+      
+      data.labActivities.forEach((activity, index) => {
+        html += `
+          <a href="${activity.link}" target="_blank" class="vr-lab-item">
+            <div class="vr-lab-icon"><i class="fas fa-play-circle"></i></div>
+            <div class="vr-lab-info">
+              <span class="vr-lab-name">${index + 1}. ${activity.title}</span>
+              <span class="vr-lab-desc">${activity.description}</span>
+            </div>
+            <i class="fas fa-arrow-right vr-lab-arrow"></i>
+          </a>
+        `;
+      });
+      
+      html += `
+          </div>
+        </div>
+      `;
+    }
+  }
+
+  // ===== INSERT INTO POPUP =====
+  body.innerHTML = html;
+  popup.classList.add('active');
+  document.body.style.overflow = 'hidden';
+  
+  if (hasGallery) {
+    const track = document.querySelector('.gallery-track');
+    if (track) {
+      track.scrollLeft = 0;
+      updateGalleryIndicator();
     }
   }
 }
