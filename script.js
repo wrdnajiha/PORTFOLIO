@@ -117,7 +117,7 @@ const projectData = {
     ],
     
     // ===== TECHNOLOGIES USED =====
-    technologies: ['Unity 6', 'Vuforia Engine', 'C#', 'Blender', 'Meshy AI', 'Android Studio', 'GitHub'],
+    technologies: ['Unity 6', 'AR Engine', 'C#', 'Blender', 'Meshy AI', 'Android Studio', 'GitHub'],
     
     // ===== MY RESPONSIBILITIES =====
     responsibilities: [
@@ -143,37 +143,80 @@ const projectData = {
     // ===== PROJECT OUTCOME =====
     outcome: 'Successfully developed a functional AR food customization prototype that enhances user engagement and decision confidence by allowing customers to visualize and customize Korean food dishes before ordering.',
     
-    tags: ['Unity', 'AR', 'C#', 'Mobile App', 'Vuforia'],
+    tags: ['Unity', 'AR', 'C#', 'Mobile App', 'AR Foundation & ARCore'],
     details: {
       'Duration': '6 months',
       'Role': 'Lead Developer',
-      'Tools': 'Unity 6, Vuforia, Blender, Android Studio',
+      'Tools': 'Unity 6, AR Foundation, AR Core, Meshy AI, Blender, Android Studio',
       'Team': 'Individual'
     },
     
     // ===== BUTTONS =====
     fypLinks: {
-      github: 'https://github.com/your-username/k-customar',
-      report: 'https://drive.google.com/file/d/YOUR_REPORT_ID/view?usp=sharing',
-      demo: 'https://www.youtube.com/watch?v=YOUR_DEMO_VIDEO_ID',
-      apk: 'https://drive.google.com/file/d/YOUR_APK_ID/view?usp=sharing'
+      //github: 'https://github.com/your-username/k-customar',
+      report: 'files/WARDINA NAJIHAH.pdf',
+      demo: 'https://youtu.be/QJ13uwvfFSM?si=D9-Q8jNPYPPkSjFt',
+      //apk: 'https://drive.google.com/file/d/YOUR_APK_ID/view?usp=sharing'
     }
   },
   
   workshop1: {
-    title: 'Workshop I · Hostel Maintenance System',
-    subtitle: 'C++ · System Design',
-    description: 'Workshop I focuses on fundamental programming and system development. This project involves the development of a Hostel Maintenance System using C++, designed to manage maintenance requests, records, and basic system operations. The project emphasizes logical thinking, problem-solving, and structured coding.',
-    image: 'images/workshop1.png',
-    tags: ['C++', 'System Design', 'OOP', 'File Handling', 'Problem Solving'],
-    details: {
-      'Duration': '5 months',
-      'Role': 'System Developer',
-      'Tools': 'C++, Visual Studio',
-      'Team': 'Individual Project'
-    },
-    pdfLink: 'files/workshop1-report.pdf'
+  title: 'Workshop I · Hostel Maintenance System',
+  subtitle: 'C++ · System Design · CLI Application',
+  description: 'The Dormitory Damage Reporting System is a C++ command-line application designed to revolutionize facility management in university dormitories. It provides a dual-interface platform for students to easily report damages, and for administrators to efficiently manage and oversee repairs. Built with C++ and MySQL, the system addresses manual reporting delays by offering real-time status updates, automated task assignment, and comprehensive analytics for data-driven decision making.',
+  
+  // ===== 4 GALLERY IMAGES =====
+  gallery: [
+    'image/ws1a.png',
+    'image/ws1b.png',
+    'image/ws1c.png',
+    'image/ws1d.png'
+  ],
+  
+  // ===== GALLERY CAPTIONS =====
+  galleryCaptions: [
+    '📋 Main Menu',
+    '📝 Register Page',
+    '👑 Admin View Student Report',
+    '👤 Student Report'
+  ],
+  
+  // ===== KEY FEATURES =====
+  features: [
+    '🔐 Login & Signup Module - Secure authentication with role-based access (Student, Staff, Admin)',
+    '👤 Student Module - Submit damage reports with details (category, location, description)',
+    '📋 Staff Module - View assigned tasks, update task status, manage profile',
+    '👑 Admin Module - View all reports, assign tasks to staff, track progress, verify completion',
+    '📊 Report Generation Module - Generate reports on task performance, maintenance history, and analytics',
+    '📈 Dashboard Analytics - View total reports, monthly cost summary, data issues by category',
+    '🔍 Search & Filter - Search reports by category, location, or student name',
+    '💬 Feedback System - Students can provide feedback on resolved maintenance tasks'
+  ],
+  
+  // ===== TECHNOLOGIES USED =====
+  technologies: ['C++', 'MySQL', 'XAMPP', 'CLI', 'File Handling', 'Data Structures'],
+  
+  // ===== SYSTEM MODULES =====
+  modules: [
+    '🔐 Login & Signup Module - User authentication with role-based access',
+    '👤 Student Module - Report damage with category, location, and description',
+    '👑 Admin Module - View reports, assign staff, update tasks, delete reports',
+    '📋 Staff Module - View assigned tasks and update completion status',
+    '📊 Report Generation Module - Generate Excel reports for analysis'
+  ],
+  
+  tags: ['C++', 'System Design', 'OOP', 'File Handling', 'Problem Solving', 'MySQL'],
+  details: {
+    'Duration': '5 months',
+    'Role': 'System Developer',
+    'Tools': 'C++, MySQL, XAMPP, Visual Studio',
+    'Team': 'Individual Project'
   },
+  
+  // ===== PDF LINK (DATA ONLY) =====
+  pdfLink: 'files/workshop1-report.pdf'
+},  // <-- COMMA AFTER CLOSING BRACE
+  
   
   workshop2: {
     title: 'Workshop II · RETAK',
@@ -434,38 +477,134 @@ audio: {
   
   videoLink: 'https://youtu.be/QJ8pOyLCwJ4'
 },
-  security: {
-    title: 'Attendance & Leave Management System (ALMS)',
-    subtitle: 'Secure Web Application | Network & System Security',
-    description: 'Developed a secure Attendance & Leave Management System using a two-tier architecture with separate web and database servers. Implemented multiple security controls including HTTPS, UFW Firewall, bcrypt password hashing, prepared statements, role-based access control, and SFTP Chroot Jail to protect the application from common web security threats.',
+
+  webapp: {
+    title: 'Sweet Bites Ordering System',
+    subtitle: 'Food Delivery Management for GRAB / Foodpanda',
+    description: 'Developed a web-based order management system for GRAB and Food Panda runner deliveries. The system allows restaurant staff to manage delivery assignments, track delivery status in real-time, and provide order details to delivery drivers. Built with PHP, MySQL, HTML, CSS, and JavaScript with full CRUD functionality, user authentication, and real-time status updates.',
+    
+    // ===== GALLERY IMAGES =====
+    gallery: [
+      'image/webapp1.png',
+      'image/webapp2.png',
+      'image/webapp3.png',
+      'image/webapp4.png',
+      'image/webapp5.png'
+    ],
+    
+    galleryCaptions: [
+      '📋 Staff Log In',
+      '👤 View Order',
+      '📦 Order Assignment',
+      '🚚 Delivery Tracking',
+      '📊 Database'
+    ],
     
     // ===== KEY FEATURES =====
     features: [
-      '🔒 Two-VM Architecture (Web Server & Database Server)',
-      '🔒 HTTPS with SSL Certificate',
-      '🔒 bcrypt Password Hashing',
-      '🔒 Prepared Statements (SQL Injection Prevention)',
-      '🔒 XSS Protection (htmlspecialchars())',
-      '🔒 Role-Based Access Control (RBAC)',
-      '🔒 UFW Firewall Configuration',
-      '🔒 SFTP Chroot Jail',
-      '🔒 Attendance & Leave Management Module'
+      '✅ Member Registration & Authentication (Login/Password with Session/Cookies)',
+      '✅ CRUD Operations (View, Add, Update, Delete) in Member Area',
+      '✅ Order Assignment Interface for GRAB & Food Panda Runners',
+      '✅ Order Details Display for Runners (Customer name, items, delivery address)',
+      '✅ Real-time Delivery Status Updates (Picked up, In Transit, Delivered)',
+      '✅ Notifications for Restaurant Staff on Order Pickup & Delivery',
+      '✅ Form Validation using JavaScript',
+      '✅ CSS Formatting for Clean UI',
+      '✅ Responsive Design for Desktop & Mobile',
+      '✅ Order Reporting & Analytics'
     ],
     
     // ===== TECHNOLOGIES USED =====
-    technologies: ['Ubuntu Server', 'Apache2', 'PHP', 'MySQL', 'VirtualBox', 'UFW Firewall', 'OpenSSL', 'SSH/SFTP'],
+    technologies: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL', 'XAMPP', 'phpMyAdmin', 'Git'],
     
-    tags: ['Web Security', 'Network Security', 'Linux', 'PHP', 'MySQL', 'OWASP', 'VirtualBox'],
+    // ===== SYSTEM INTERFACES =====
+    interfaces: [
+      '🔐 Login Page - User authentication with role-based access (Customer, Staff, Runner)',
+      '👤 Customer Panel - Place orders, view history, track delivery status',
+      '📋 Staff Panel - Order statistics, platform distribution, daily/monthly summaries',
+      '📦 Staff Assign Order - View and assign orders to available runners',
+      '👥 Staff Member Management - Add, Update, Delete users (CRUD)',
+      '📄 Status Print Report - Generate and print delivery reports',
+      '🏃 Runner Panel - View assigned orders and customer details',
+      '🔄 Runner Assign Order - Update delivery status (Assigned, Picked Up, In Transit, Delivered, Unsuccessful)'
+    ],
+    
+    // ===== VALIDATION FEATURES =====
+    validation: [
+      '📝 Login Form Validation - Required fields, empty input prevention',
+      '📝 Signup Form Validation - Role validation, email format, phone validation, password matching',
+      '📝 Checkout Form Validation - Delivery address, payment method, order items validation',
+      '📝 Real-time Email Availability Check - Debounced AJAX validation'
+    ],
+    
+    tags: ['Web Development', 'PHP', 'MySQL', 'Order Management', 'CRUD', 'Authentication'],
     details: {
-      'Duration': '3 months',
-      'Role': 'Security Analyst & Backend Developer',
-      'Tools': 'Ubuntu Server, Apache2, PHP, MySQL, VirtualBox, UFW Firewall, OpenSSL, SSH/SFTP',
-      'Team': 'Group Project (3 Members)'
+      'Duration': '1 months',
+      'Role': 'Full-Stack Developer',
+      'Tools': 'PHP, MySQL, HTML, CSS, JavaScript, Bootstrap',
+      'Team': '4 members'
     },
     
-    // ===== DEMO VIDEO LINK =====
-    videoLink: 'https://youtube.com/shorts/sJNBUCZAkqM?si=v1iIJ0rNp0Hm5hCM'
+    // ===== PROJECT LINKS =====
+    projectLinks: {
+      report: 'files/ReportWeb.pdf'  // <-- ADD YOUR REPORT PDF
+    }
   },
+  
+  security: {
+  title: 'Attendance & Leave Management System (ALMS)',
+  subtitle: 'Secure Web Application | Network & System Security',
+  description: 'Developed a secure Attendance & Leave Management System using a two-tier architecture with separate web and database servers. Implemented multiple security controls including HTTPS, UFW Firewall, bcrypt password hashing, prepared statements, role-based access control, and SFTP Chroot Jail to protect the application from common web security threats.',
+  
+  // ===== 5 GALLERY IMAGES =====
+  gallery: [
+    'image/sec1.png',
+    'image/sec2.png',
+    'image/sec3.png',
+    'image/sec4.png',
+    'image/sec5.png'
+  ],
+  
+  // ===== GALLERY CAPTIONS =====
+  galleryCaptions: [
+    '🔐 Login Page with HTTPS',
+    '📊 Staff Dashboard',
+    '🔒 SSL Certificate Details',
+    '🛡️ SQL Injection Protection',
+    '🛡️ XSS Prevention'
+  ],
+  
+  // ===== KEY FEATURES =====
+  features: [
+    '🔒 Two-VM Architecture (Web Server & Database Server)',
+    '🔒 HTTPS with SSL Certificate (TLS 1.2/1.3)',
+    '🔒 bcrypt Password Hashing (OWASP A02)',
+    '🔒 Prepared Statements (SQL Injection Prevention - OWASP A03)',
+    '🔒 XSS Protection (htmlspecialchars() - OWASP A03)',
+    '🔒 Role-Based Access Control (RBAC - OWASP A01)',
+    '🔒 UFW Firewall Configuration',
+    '🔒 SFTP Chroot Jail',
+    '🔒 Secure Session Management (HttpOnly, Secure, SameSite - OWASP A07)',
+    '🔒 Attendance & Leave Management Module'
+  ],
+  
+  // ===== TECHNOLOGIES USED =====
+  technologies: ['Ubuntu Server', 'Apache2', 'PHP 8.2', 'MySQL 8.0', 'VirtualBox', 'UFW Firewall', 'OpenSSL', 'SSH/SFTP'],
+  
+  tags: ['Web Security', 'Network Security', 'Linux', 'PHP', 'MySQL', 'OWASP', 'VirtualBox'],
+  details: {
+    'Duration': '3 months',
+    'Role': 'Infrastructure & Server Administrator',
+    'Tools': 'Ubuntu Server, Apache2, PHP, MySQL, VirtualBox, UFW Firewall, OpenSSL, SSH/SFTP',
+    'Team': 'Group Project (3 Members)'
+  },
+  
+  // ===== DEMO VIDEO LINK =====
+  videoLink: 'https://youtube.com/shorts/sJNBUCZAkqM?si=v1iIJ0rNp0Hm5hCM',
+  
+  // ===== FULL REPORT PDF =====
+  reportLink: 'files/Project_Report_ALMS_Group_12_B032310573.pdf'
+},
   
     vr: {
     title: 'Virtual Reality · Malaysian Food Heritage Gallery',
@@ -594,6 +733,7 @@ function openPopup(projectId) {
   const hasImage = data.image && data.image !== '';
   const hasPdf = data.pdfLink && data.pdfLink !== '';
   const isFyp = projectId === 'fyp';
+  const isWorkshop1 = projectId === 'workshop1';
   const isRetak = projectId === 'workshop2';
   const isImaging = projectId === 'imaging';
   const isAnimation = projectId === 'animation';
@@ -601,7 +741,9 @@ function openPopup(projectId) {
   const isMotion1 = projectId === 'motion1';  // <-- ADD THIS
   const isMotion2 = projectId === 'motion2';
   const isVR = projectId === 'vr';
-  const hasGallery = (isFyp || isRetak || isImaging || isAnimation || isAudio || isMotion1 || isMotion2 || isVR) && data.gallery && data.gallery.length > 0;
+  const isSecurity = projectId === 'security';
+  const isWebApp = projectId === 'webapp';
+  const hasGallery = (isFyp || isWorkshop1 || isRetak || isImaging || isAnimation || isAudio || isMotion1 || isMotion2 || isVR || isWebApp || isSecurity) && data.gallery && data.gallery.length > 0;
   const hasSoftware = data.software && data.software.length > 0;
   const hasVideo = data.video && data.video !== '';
   const hasExtraLinks = data.extraLinks && (data.extraLinks.part1 || data.extraLinks.part2);
@@ -820,7 +962,7 @@ if (isAudio && data.posterImage) {
 }
 
   // ===== MAIN IMAGE =====
-  if (hasImage && !isFyp && !isRetak && !isImaging && !isAnimation && !isAudio && !isMotion1 && !isMotion2) {
+  if (hasImage && !isFyp && !isWorkshop1 && !isRetak && !isImaging && !isAnimation && !isAudio && !isMotion1 && !isMotion2 && !isVR&& !isWebApp && !isSecurity) {
     html += `
       <div class="popup-image">
         <img src="${data.image}" alt="${data.title}" />
@@ -875,6 +1017,88 @@ if (isAudio && data.posterImage) {
     `;
   }
   
+// ===== WORKSHOP I DETAILED SECTION =====
+if (isWorkshop1) {
+  
+  // ===== KEY FEATURES =====
+  if (data.features && data.features.length > 0) {
+    html += `
+      <div class="fyp-section">
+        <h4 class="fyp-title"><i class="fas fa-list-check"></i> Key Features</h4>
+        <div class="fyp-features-grid">
+    `;
+    
+    data.features.forEach(feature => {
+      html += `
+        <div class="fyp-feature-item">
+          <span>${feature}</span>
+        </div>
+      `;
+    });
+    
+    html += `
+        </div>
+      </div>
+    `;
+  }
+  
+  // ===== TECHNOLOGIES USED =====
+  if (data.technologies && data.technologies.length > 0) {
+    html += `
+      <div class="fyp-section">
+        <h4 class="fyp-title"><i class="fas fa-code"></i> Technologies Used</h4>
+        <div class="fyp-tech-tags">
+    `;
+    
+    data.technologies.forEach(tech => {
+      html += `
+        <span class="fyp-tech-tag">${tech}</span>
+      `;
+    });
+    
+    html += `
+        </div>
+      </div>
+    `;
+  }
+  
+  // ===== SYSTEM MODULES =====
+  if (data.modules && data.modules.length > 0) {
+    html += `
+      <div class="fyp-section">
+        <h4 class="fyp-title"><i class="fas fa-cubes"></i> System Modules</h4>
+        <div class="fyp-list">
+    `;
+    
+    data.modules.forEach(item => {
+      html += `
+        <div class="fyp-list-item">
+          <i class="fas fa-chevron-right"></i>
+          <span>${item}</span>
+        </div>
+      `;
+    });
+    
+    html += `
+        </div>
+      </div>
+    `;
+  }
+  
+  // ===== PDF BUTTON =====
+  if (data.pdfLink) {
+    html += `
+      <div class="report-full-section">
+        <a href="${data.pdfLink}" target="_blank" class="report-full-btn">
+          <i class="fas fa-file-pdf"></i> View Full Report
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    `;
+  }
+}
+
+
   // ===== RETAK RESOURCES =====
   if (isRetak && data.retakLinks) {
     const links = data.retakLinks;
@@ -1021,16 +1245,7 @@ body.innerHTML = html;
 popup.classList.add('active');
 document.body.style.overflow = 'hidden';
   
-  // ===== WORKSHOP I PDF =====
-  if (hasPdf && !isRetak) {
-    html += `
-      <div class="popup-pdf-section">
-        <a href="${data.pdfLink}" target="_blank" class="popup-pdf-link">
-          <i class="fas fa-file-pdf"></i> View Report (PDF)
-        </a>
-      </div>
-    `;
-  }
+
   
   // ===== YOUTUBE LINK (AT THE BOTTOM - for Audio project) =====
   if (hasYoutube) {
@@ -1117,66 +1332,64 @@ document.body.style.overflow = 'hidden';
   }
 
     // ===== IT SECURITY DETAILED SECTION =====
-  if (projectId === 'security') {
+if (projectId === 'security') {
+  
+  // ===== KEY FEATURES =====
+  if (data.features && data.features.length > 0) {
+    html += `
+      <div class="fyp-section">
+        <h4 class="fyp-title"><i class="fas fa-shield-alt"></i> Key Features</h4>
+        <div class="fyp-features-grid">
+    `;
     
-    // ===== KEY FEATURES =====
-    if (data.features && data.features.length > 0) {
+    data.features.forEach(feature => {
       html += `
-        <div class="fyp-section">
-          <h4 class="fyp-title"><i class="fas fa-shield-alt"></i> Key Features</h4>
-          <div class="fyp-features-grid">
-      `;
-      
-      data.features.forEach(feature => {
-        html += `
-          <div class="fyp-feature-item">
-            <span>${feature}</span>
-          </div>
-        `;
-      });
-      
-      html += `
-          </div>
+        <div class="fyp-feature-item">
+          <span>${feature}</span>
         </div>
       `;
-    }
+    });
     
-    // ===== TECHNOLOGIES USED =====
-    if (data.technologies && data.technologies.length > 0) {
-      html += `
-        <div class="fyp-section">
-          <h4 class="fyp-title"><i class="fas fa-code"></i> Technologies Used</h4>
-          <div class="fyp-tech-tags">
-      `;
-      
-      data.technologies.forEach(tech => {
-        html += `
-          <span class="fyp-tech-tag">${tech}</span>
-        `;
-      });
-      
-      html += `
-          </div>
+    html += `
         </div>
-      `;
-    }
-    
-    // ===== SINGLE VIDEO LINK (Demo Video) =====
-    if (data.videoLink) {
-      html += `
-        <div class="single-video-section">
-          <a href="${data.videoLink}" target="_blank" class="single-video-btn">
-            <div class="video-icon"><i class="fas fa-play-circle"></i></div>
-            <div class="video-info">
-              <span class="video-label">Watch Demo Video</span>
-              <span class="video-desc">Timelapse demo of ALMS</span>
-            </div>
-            <i class="fas fa-arrow-right video-arrow"></i>
-          </a>
-        </div>
-      `;
-    }
+      </div>
+    `;
   }
+  
+  // ===== TECHNOLOGIES USED =====
+  if (data.technologies && data.technologies.length > 0) {
+    html += `
+      <div class="fyp-section">
+        <h4 class="fyp-title"><i class="fas fa-code"></i> Technologies Used</h4>
+        <div class="fyp-tech-tags">
+    `;
+    
+    data.technologies.forEach(tech => {
+      html += `
+        <span class="fyp-tech-tag">${tech}</span>
+      `;
+    });
+    
+    html += `
+        </div>
+      </div>
+    `;
+  }
+  
+  
+  
+  // ===== FULL REPORT BUTTON =====
+  if (data.reportLink) {
+    html += `
+      <div class="report-full-section">
+        <a href="${data.reportLink}" target="_blank" class="report-full-btn">
+          <i class="fas fa-file-pdf"></i> View Full Report
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    `;
+  }
+}
     // ===== VR DETAILED SECTION =====
   if (projectId === 'vr') {
     
@@ -1263,6 +1476,150 @@ document.body.style.overflow = 'hidden';
     }
   }
 
+  // ===== WEB APP DETAILED SECTION =====
+if (projectId === 'webapp') {
+  
+  // ===== KEY FEATURES =====
+  if (data.features && data.features.length > 0) {
+    html += `
+      <div class="fyp-section">
+        <h4 class="fyp-title"><i class="fas fa-list-check"></i> Key Features</h4>
+        <div class="fyp-features-grid">
+    `;
+    
+    data.features.forEach(feature => {
+      html += `
+        <div class="fyp-feature-item">
+          <span>${feature}</span>
+        </div>
+      `;
+    });
+    
+    html += `
+        </div>
+      </div>
+    `;
+  }
+  
+  // ===== TECHNOLOGIES USED =====
+  if (data.technologies && data.technologies.length > 0) {
+    html += `
+      <div class="fyp-section">
+        <h4 class="fyp-title"><i class="fas fa-code"></i> Technologies Used</h4>
+        <div class="fyp-tech-tags">
+    `;
+    
+    data.technologies.forEach(tech => {
+      html += `
+        <span class="fyp-tech-tag">${tech}</span>
+      `;
+    });
+    
+    html += `
+        </div>
+      </div>
+    `;
+  }
+  
+  // ===== SYSTEM INTERFACES =====
+  if (data.interfaces && data.interfaces.length > 0) {
+    html += `
+      <div class="fyp-section">
+        <h4 class="fyp-title"><i class="fas fa-desktop"></i> System Interfaces</h4>
+        <div class="fyp-list">
+    `;
+    
+    data.interfaces.forEach(item => {
+      html += `
+        <div class="fyp-list-item">
+          <i class="fas fa-chevron-right"></i>
+          <span>${item}</span>
+        </div>
+      `;
+    });
+    
+    html += `
+        </div>
+      </div>
+    `;
+  }
+  
+  // ===== VALIDATION FEATURES =====
+  if (data.validation && data.validation.length > 0) {
+    html += `
+      <div class="fyp-section">
+        <h4 class="fyp-title"><i class="fas fa-check-circle"></i> Validation Features</h4>
+        <div class="fyp-list">
+    `;
+    
+    data.validation.forEach(item => {
+      html += `
+        <div class="fyp-list-item">
+          <i class="fas fa-chevron-right"></i>
+          <span>${item}</span>
+        </div>
+      `;
+    });
+    
+    html += `
+        </div>
+      </div>
+    `;
+  }
+  
+  // ===== PROJECT LINKS =====
+  if (data.projectLinks) {
+    const links = data.projectLinks;
+    
+    html += `
+      <div class="fyp-buttons-section">
+        <h4 class="fyp-title"><i class="fas fa-link"></i> Resources</h4>
+        <div class="fyp-buttons-grid">
+    `;
+    
+    if (links.github) {
+      html += `
+        <a href="${links.github}" target="_blank" class="fyp-btn github-btn">
+          <i class="fab fa-github"></i> GitHub Repository
+        </a>
+      `;
+    }
+    
+    if (links.demo) {
+      html += `
+        <a href="${links.demo}" target="_blank" class="fyp-btn demo-btn">
+          <i class="fas fa-globe"></i> Live Demo
+        </a>
+      `;
+    }
+    
+    if (links.drive) {
+      html += `
+        <a href="${links.drive}" target="_blank" class="fyp-btn report-btn">
+          <i class="fab fa-google-drive"></i> Project Resources
+        </a>
+      `;
+    }
+    
+    html += `
+        </div>
+      </div>
+    `;
+  }
+  
+  // ===== FULL REPORT BUTTON (AT THE BOTTOM) =====
+  if (data.projectLinks && data.projectLinks.report) {
+    html += `
+      <div class="report-full-section">
+        <a href="${data.projectLinks.report}" target="_blank" class="report-full-btn">
+          <i class="fas fa-file-pdf"></i> View Full Report
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    `;
+  }
+}
+
   // ===== INSERT INTO POPUP =====
   body.innerHTML = html;
   popup.classList.add('active');
@@ -1317,4 +1674,23 @@ function sendMessage(event) {
   
   // Show success message
   alert('📧 Your message is being sent via email!');
+}
+
+// ============================================================
+// ===== TOGGLE PROJECTS SECTION =====
+// ============================================================
+function toggleProjects(sectionId) {
+  const grid = document.getElementById(sectionId);
+  const section = grid.closest('.project-section');
+  const button = section.querySelector('.section-explore');
+  
+  if (grid.classList.contains('hidden')) {
+    grid.classList.remove('hidden');
+    grid.classList.add('visible');
+    button.innerHTML = 'Hide <i class="fas fa-chevron-up"></i>';
+  } else {
+    grid.classList.add('hidden');
+    grid.classList.remove('visible');
+    button.innerHTML = 'Explore <i class="fas fa-arrow-right"></i>';
+  }
 }
